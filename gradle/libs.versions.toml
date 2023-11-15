@@ -1,0 +1,19 @@
+[versions]
+ktor = "2.3.5"
+kotlin = "1.9.10"
+logback = "1.2.11"
+arrow = "1.2.0"
+graphql = "7.0.1"
+
+[libraries]
+ktor-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-netty = { module = "io.ktor:ktor-server-netty-jvm", version.ref = "ktor" }
+logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+graphql-server = { module = "com.expediagroup:graphql-kotlin-server", version.ref = "graphql" }
+graphql-ktor = { module = "com.expediagroup:graphql-kotlin-ktor-server", version.ref = "graphql" }
+graphql-hooks-provider = { module = "com.expediagroup:graphql-kotlin-hooks-provider", version.ref = "graphql" }
+
+[plugins]
+ktor = { id = "io.ktor.plugin", version.ref = "ktor" }
+graphql = { id = "com.expediagroup.graphql", version.ref = "graphql" }
