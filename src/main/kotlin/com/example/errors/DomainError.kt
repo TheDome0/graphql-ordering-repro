@@ -2,8 +2,8 @@ package com.example.errors
 
 sealed interface DomainError {
     val message: String?
-        get() = null
 }
 
-data object NotFound : DomainError
-data object Unauthorized : DomainError
+data object NotFound : DomainError {
+    override val message: String? = "Not found"
+}
