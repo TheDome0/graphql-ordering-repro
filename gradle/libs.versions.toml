@@ -1,9 +1,9 @@
 [versions]
-ktor = "2.3.5"
-kotlin = "1.9.10"
+ktor = "3.0.1"
+kotlin = "2.0.21"
 logback = "1.2.11"
 arrow = "1.2.0"
-graphql = "7.0.1"
+graphql = "9.0.0-SNAPSHOT"
 
 [libraries]
 ktor-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }

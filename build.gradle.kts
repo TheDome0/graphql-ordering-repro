@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.10"
+    kotlin("jvm") version "2.0.21"
     alias(libs.plugins.ktor)
     alias(libs.plugins.graphql)
 }
@@ -16,6 +16,7 @@ application {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -30,7 +31,7 @@ dependencies {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
     sourceSets.main {
         kotlin.srcDir("build/generated/ksp/main/kotlin")
     }
