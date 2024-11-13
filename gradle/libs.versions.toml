@@ -1,9 +1,9 @@
 [versions]
-ktor = "3.0.1"
+ktor = "2.3.12"
 kotlin = "2.0.21"
 logback = "1.2.11"
 arrow = "1.2.0"
-graphql = "9.0.0-SNAPSHOT"
+graphql = "8.2.1"
 
 [libraries]
 ktor-core = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
